@@ -129,7 +129,7 @@ article  {
 
   article h2 {
       color: var(--destaque);
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       
   }
   
@@ -189,6 +189,32 @@ article  {
     height: 100%;
     background-color: var(--destaque);
     border-radius: 4px;
+  }
+
+  #formacao-container {
+    display: grid;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+    #formacao-container .curso {
+    background-color: var(--fundo-card);
+    border-radius: 8px;
+    border-left: 4px solid var(--destaque );
+    padding-left: 15px;
+    transition: border-left-width 0.5s; border-color 0.5s;
+  }
+
+  #formacao-container .curso:hover {
+    border-left-width: 15px;
+    border-color: var(--destaque);
+    cursor: pointer;
+
+  }
+
+  #formacao-container .periodo {
+    font-style: italic;
+    color: var(--destaque);
+    margin-bottom: 8px;
   }
 
   @media screen and (min-width: 768px) {
